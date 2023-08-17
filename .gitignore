@@ -1,4 +1,8 @@
 day2_git
+.vscode 
+
+# python
+.cpy
 
 # node
 node_modules

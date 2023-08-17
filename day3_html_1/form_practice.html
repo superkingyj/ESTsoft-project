@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="./result.html" method="get">
+        <img src="./asimage.jpeg" width="300" height="300" alt="asImage">
+        
+        <fieldset style="width: 400px;"> 
+
+            <legend>A/S 제출 양식</legend>
+            <!-- label: 입력 필드의 설명을 달아줌 -->
+            <div>
+                <label for="username"> 아이디 : </label>
+                <input type="text" name="username" placeholder="아이디를 입력하세요" autocomplete="on" required>
+            </div>
+            
+            <div>
+                <label for="password"> 비밀번호 : </label>
+                <input type="password" name="password" placeholder="비밀번호를 입력하세요" autocomplete="on" required>
+            </div>
+            
+            <div>
+                <label for="age">나이 : </label>
+                <input type="number" name="age" min="0" max="200" step="1" placeholder="나이를 입력하세요" autocomplete="off">
+            </div>
+
+            <div>
+                <label for="buy_date">제품 구매 날짜: </label>
+                <input type="datetime" size="25" placeholder="2023/06/21형태로 입력하세요">
+            </div>
+
+            <div>
+                <label> 종류: </label>
+                <select name="type">
+                    <option value="1">환불</option>
+                    <option value="2">고장 신고</option>
+                    <option value="3">기타</option>
+                </select>
+            </div>
+            
+            <label for="summary">내용 : </label>
+            <div>
+                <textarea name="summary" rows="5" cols="20" placeholder="내용을 입력하세요"></textarea>
+            </div>
+            
+
+            <div>
+                <input name="type_2_1" type="checkbox" value="1day">
+                <label for="type_2_1">1일 이내</label>
+                
+                <input name="type_2_2" type="checkbox" value="1week">
+                <label for="type_2_2">1주 이내</label>
+                
+                <input name="type_2_3" type="checkbox" value="1month">
+                <label for="type_2_3">1달 이내</label>
+            </div>
+            
+            <div>
+                <input name="type_3" type="radio" value="emergency">
+                <label for="type_3">긴급</label>
+                
+                <input name="type_3" type="radio" value="normal" checked>
+                <label for="type_3">일반</label>
+            </div>
+
+            <div>
+                <label for="adderess">주소 : </label>
+                <input name="adderess" type="text" placeholder="주소를 입력해주세요">
+            </div>
+            
+            <div>
+                <button type="submit">제출</button>
+            </div>
+        </fieldset>
+    </form>
+    
+</body>
+</html>

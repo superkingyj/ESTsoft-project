@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>My Beautiful Site</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to My Beautiful Site</h1>
+      <nav>
+        <ul>
+          <li><a href="#section1">Section 1</a></li>
+          <li><a href="#section2">Section 2</a></li>
+          <li><a href="#section3">Section 3</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="section1" class="mySection">
+        <h2>Section 1</h2>
+        <p>This is the first section of my beautiful site.</p>
+      </section>
+      <section id="section2" class="mySection">
+        <h2>Section 2</h2>
+        <p>This is the second section of my beautiful site.</p>
+      </section>
+      <section id="section3" class="mySection">
+        <h2>Section 3</h2>
+        <p>This is the third section of my beautiful site.</p>
+
+        <div id="btnContainer">
+          <button id="btn">Click Me</button>
+        </div>
+
+        <button id="myBtn">Open Modal</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>Created by Me</p>
+    </footer>
+
+    <div id="MyModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Beautiful Site!!</p>
+      </div>
+    </div>
+  </body>
+
+  <!-- 1. 자바스크립트 코드 바로 작성하는 방법 -->
+  <!-- 속도 측면에서 여기다가 적는게 빠름 -->
+  <script>
+    const a = 10;
+  </script>
+
+  <!-- 2. 자바스크립트 소스 불러오는 방법 -->
+  <script src="./script.js"></script>
+</html>

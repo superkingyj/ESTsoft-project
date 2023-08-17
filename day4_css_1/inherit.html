@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 3순위 */
+        #anscestor{
+            background-color: blue;
+        }
+        
+        /* 4순위 */
+        .container{
+            background-color: red;
+        }
+        /* 5순위 */
+        div{
+            background-color: green;
+            border: 1px solid black;
+            padding: 20px;
+        }
+
+        div:nth-child(1){
+            background-color: chocolate;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container" id="anscestor">
+        조상
+        <div style="background-color: lightseagreen; color: initial;">
+            부모
+            <div style="background-color: aquamarine;">
+                나
+                <div style="background-color: greenyellow;">
+                    자식
+                    <div style="background-color: yellowgreen;">자손</div>
+                </div>
+            </div>
+            <div> 형제 </div>
+            <div> 형제 </div>
+        </div>
+    </div>
+</body>
+</html>

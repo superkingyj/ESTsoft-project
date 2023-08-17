@@ -1,0 +1,23 @@
+/* 클래스 선택자 */
+.lauch {
+    color: blueviolet;
+    font-size: 24px;
+}
+
+/* id 선택자 */
+#menu {
+    color: greenyellow;
+    font-size: 24px;
+}
+
+/* 그룹 선택자 */
+p, span{
+    color: cadetblue;
+}
+
+/* 자식 선택자 */
+div>p{
+    color: darkkhaki;
+    font-size: 20px;
+}
+

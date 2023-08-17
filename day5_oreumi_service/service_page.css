@@ -1,0 +1,170 @@
+body{
+    font-family: Noto Sans KR;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #EAEAEA;
+}
+
+.wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 1000px;
+    padding: 20px;
+}
+
+/* 제목 */
+.big-header{
+    background-color: #D9D9D9;
+    padding: 90px 67px;
+    font-size: 60px;
+    font-family: "BMGANNAPro", sans-serif;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+section{
+    background-color: #fff;
+    padding: 32px;
+    width: 70%;
+}
+
+aside{
+    background-color: #fff;
+    padding: 32px;
+    width: 30%;
+}
+
+ul{
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* 중간 제목 */
+.subtitle {
+    color: #1f1f1f;
+    font-size: 32px;
+    font-family: Noto Sans KR;
+    font-weight: 700;
+}
+
+span {
+    color: #0066FF;
+}
+
+table{
+    text-align: center;
+}
+
+th, td{
+    border: #ebebeb 1px solid;
+    padding: 10px;
+}
+
+th {
+    background-color: #d3d3d3;
+}
+
+.gap40{
+    display: flex;
+    flex-direction: column;
+    gap: 40px
+}
+
+.gap16{
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+}
+
+button{
+    width: 100%;
+    background-color: #1F1F1F;
+    color: #fff;
+    border-radius: 12px;
+    padding: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover{
+    background-color: #0066FF;
+    transition-duration: 0.5;
+    box-shadow: 0px 4px 24px 0px rgba(0, 102, 255, 0.70);
+}
+
+button:active{
+    background-color: #5a9cff;
+}
+
+li {
+    line-height: 1.4;
+}
+
+.button-img{
+    width: 100%;
+    height: 400px;
+    overflow: cover;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+a{
+    text-decoration-line: none;
+    color: #1f1f11;
+}
+
+footer{
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding: 60px 0;
+    gap: 20px;
+    color: #AAAAAA;
+    text-align: center;
+}
+
+.rowbox{
+    display: flex;
+    gap:12px;
+}
+
+@media (max-width: 600px) {
+    .wrap{
+        width: 400px;
+    }
+
+    .box{
+        flex-direction: column;
+    }
+
+    section, aside{
+        width: 84%;
+    }
+
+    .big-header{
+        font-size:36px;
+        padding: 40px 24px;
+    }
+
+    .subtitle{
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .bottom-img{
+        height: 200px;
+    }
+}

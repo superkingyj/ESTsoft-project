@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+
+    <body>
+        <a href="{% url 'page' %}">페이지 1로 이동</a>
+        <a href="{% url 'page2' %}">페이지 2로 이동</a>
+        <a href="{% url 'my_page' %}">my_page로 이동</a>
+        
+        <ul>
+            {% for item in items %}
+                <li> {{ item }} </li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: pink; display:flex">
+    <img src = {{ data.image_src }} , style="width:500px; height:500px; border: 5px solid black; border-radius: 20px">
+    <ul>
+        {% for info in data.infos %}
+            {% if forloop.counter0 == 0 %}
+                <li><h1>이름</h1></li>
+            {% elif forloop.counter0 == 1 %}
+                <li><h1>애완동물</h1></li>
+            {% else %}
+                <li><h1>설명</h1></li>
+            {% endif %}
+            <li><h1> {{ info }} </h1></li>
+        {% endfor %} 
+    </ul?>
+
+    <ul>
+    {% for num in data.nums %}
+        {% if num|divisibleby:2 %}
+            <li> {{ num }} </li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+
+    {% if data.visit_count == 0 %}
+        <h1> 환영합니다! 여기가 처음이시군요.</h1>
+    {% else %}
+        <h1> 다시 방문해 주셔서 감사합니다! </h1>
+    {% endif %}
+
+    <p> {{ data.title|upper }} </p>
+    <p> {{ data.date|date:"Y-m-d" }} </p>
+</body>
+</html>

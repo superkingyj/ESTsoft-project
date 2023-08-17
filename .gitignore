@@ -1,0 +1,13 @@
+day2_git
+
+# node
+node_modules
+package.json
+package-lock.json
+
+# django
+bin
+include
+lib
+pyvenv.cfg
+__pycache__

@@ -1,0 +1,50 @@
+/* common */
+*{
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style:none;
+}
+
+a {
+    text-decoration:none;
+    font-size:14px;
+}
+
+.upper_menu {
+    width: 800px;
+    overflow: hidden;
+    margin: 150px auto;
+}
+  
+.upper_menu > li {
+    width: 20%; /* 20*5 = 100% */
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    background-color: #5778ff;
+}
+
+.down_menu > li {
+    line-height: 50px;
+    background-color: #94a9ff;
+}
+
+.down_menu {
+    height: 0; 
+    overflow: hidden;
+}
+
+/* hover */
+.upper_menu > li:hover {
+    background-color: #94a9ff;
+    transition-duration: 0.3s;
+}
+
+.upper_menu > li:hover .down_menu {
+    height: 250px; 
+    transition-duration: 0.5s;
+}

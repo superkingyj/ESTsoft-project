@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method='post' action="{% url 'add_data' %}" >
+        {% csrf_token %} 
+        
+        <label>제목: </label>
+        <input type="text" name="title" required></input> <br>
+        
+        <label>내용: </label>
+        <textarea type="text" name="content" rows="4" required></textarea> <br>
+        
+        <label>날짜: </label>
+        <input type="date" name="published_date" required></input> <br>
+        
+        <input type="submit" value="Add Post">
+    </form>
+</body>
+</html>

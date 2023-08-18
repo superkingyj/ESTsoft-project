@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: pink">
+    
+    <img src = {{ img }} , width="300px">
+
+    <h1> 회원 가입! </h1>
+    
+    <form method='post' display="flex" style="width: 400px; border: 3px solid black; padding: 10px; border-radius: 20px">
+        {% csrf_token %} 
+        
+        <div style="padding: 5px">
+            <label > 아이디:</label>
+            <input type="text" name="user_id" required></input> <br>
+        </div>
+
+        <div style="padding: 5px">
+            <label> 이메일: </label>
+            <input type="text" name="email" required></input> <br>
+        </div>
+
+        <div style="padding: 5px">
+            <labe> 패스워드: </labe>
+            <input type="password" name="password" required></input> <br>
+        </div>
+
+        <div style="padding: 5px">
+            <label> 자기소개</label>
+            <textarea type="text" name="desc" rows="5" required> </textarea> <br>
+        </div>
+
+        <input type="submit" value="회원 가입" style="width: 100px"> 
+    </form>
+</body>
+</html>

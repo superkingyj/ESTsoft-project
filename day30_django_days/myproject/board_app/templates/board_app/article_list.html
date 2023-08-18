@@ -1,0 +1,26 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"/>
+    <title>Document</title>
+</head>
+<body>
+    <h1>락스타의 기록😎</h1>
+
+    <ul>
+        {% for article in articles %}
+        <li>
+            <h2>{{ article.title }}</h2>
+            <p>{{ article.content }}</p>
+            <p>{{ article.created_at }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'article_create' %}">글 작성</a>
+    <a href="{% url 'login' %}">로그인</a>
+</body>
+</html>

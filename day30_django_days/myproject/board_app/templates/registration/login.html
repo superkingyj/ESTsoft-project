@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>로그인</h2>
+    <form method="post">
+        {% csrf_token %}
+        
+        {% comment %} <input type="text" name="id">
+        <input type="text" name="pwd"></input> {% endcomment %}
+
+        {{form.as_p}}
+        <button type="submit">로그인</button>
+
+    </form>
+    <p>아직 회원이 아니신가요? <a href="{% url 'signup' %}">회원가입</a> </p>
+</body>
+</html>

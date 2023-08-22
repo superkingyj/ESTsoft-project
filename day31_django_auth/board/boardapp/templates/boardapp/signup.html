@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"/>
+    <title>signup</title>
+</head>
+<body>
+    {% block content %}
+
+    <h1>회원가입</h1>
+
+    <form method='post'>
+        {% csrf_token %}
+        {% comment %} 
+        {{ form.as_p }}는 각 필드를 <p>로 묶어서 표시
+        {{ form.as_ul }}은 목록 형태로!
+        {{ form.as_table }}은 테이블형태로!
+        {% endcomment %}
+        {{form.as_p}} 
+        <button type="submit">회원가입</button>
+    </form>
+
+    {% endblock %}
+</body>
+</html>

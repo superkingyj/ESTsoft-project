@@ -1,0 +1,16 @@
+{% extends './base.html' %} 
+
+{% block content %}
+
+<form method="GET" action="{% url 'search_view' %}">
+    <input type="text" name="q" placeholder="제목 혹은 저자 키워드"/>
+    <button type="submit">Search</button>
+</form>
+
+<ul>
+    {% for result in results %}
+        <li>{{ result.object.title }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

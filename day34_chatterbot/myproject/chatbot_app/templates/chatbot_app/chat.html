@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot 예제</title>
+</head>
+<body>
+
+    <h1>ChatterBot과 함께 나누는 대화☕️</h1>
+    
+    <form method="post">
+        {% csrf_token %}
+        <label for="user_input">사용자 입력: </label>
+        <input type="text" name="user_input" id="user_input">
+        <button type="submit">전송</button>
+    </form>
+
+    {% if user_input %}
+        <p><string>사용자:</string> {{ user_input }}</p>
+        <p><string>오르미봇:</string> {{ response }}</p>
+    {% endif %}
+
+</body>
+</html>

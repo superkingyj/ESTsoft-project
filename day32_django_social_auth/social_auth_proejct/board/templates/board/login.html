@@ -1,0 +1,29 @@
+{% load static %} {% load socialaccount %} 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"/>
+    <title>Document</title>
+</head>
+<body>
+    <a href="{% url 'social:begin' 'google-oauth2' %}">
+        <img src="{% static 'img/btn_google.svg'%}" width='20px' height='20px'> 
+        멋지게 구글 로그인
+    </a>
+
+    <a href="{% url 'social:begin' 'naver' %}">
+        <img src="{% static 'img/btn_naver.svg'%}" width='20px' height='20px'> 
+        멋지게 네이버 로그인
+    </a>
+
+    <a href="{% provider_login_url 'kakao' method = 'OAuth2' %}">
+        <img src="{% static 'img/btn_kakao.svg'%}" width='20px' height='20px'> 
+        멋지게 카카오 로그인
+    </a>
+
+    <a href="{% url 'sign_up' %}">그냥 시시한 회원가입</a>
+</body>
+</html>

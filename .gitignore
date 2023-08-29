@@ -1,5 +1,6 @@
 day2_git
 day24_test
+day35_기술특강
 .vscode 
 
 # python
@@ -16,3 +17,6 @@ include
 lib
 pyvenv.cfg
 __pycache__
+
+# drf
+static

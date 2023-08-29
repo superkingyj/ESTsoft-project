@@ -126,7 +126,7 @@ $ source django_env/bin/activate
 
 ## 장고 프로젝트 만들기
 - 장고 설치 : pip install django
-= 프로젝트 생성 : django-admin startproject projectname
+- 프로젝트 생성 : django-admin startproject projectname
 - 프로젝트 폴더 이동 : cd projectname
 - python manage.py migrate
 - python manage.py runserver

@@ -66,7 +66,7 @@ urlpatterns = [
         return render(request, 'problem/{}.html'.format(request.problem_id))
     ```
 - includ 함수 사용
-    ![](https://velog.velcdn.com/images/superkingyj/post/b855b6f4-6bc5-4d07-8beb-0cf587c3e561/image.png)
+    - ![](https://velog.velcdn.com/images/superkingyj/post/b855b6f4-6bc5-4d07-8beb-0cf587c3e561/image.png)
     - 다른 url 설정 파일을 참조할 떄 사용
     - 장점
         1. URL 파일구조 분리
